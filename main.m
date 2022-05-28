@@ -118,12 +118,11 @@ if ~isempty(struct)
             
             eval(['removed_points = struct.algorithm',num2str(index), '.removed_points;']);
             eval(['end_point = struct.algorithm',num2str(index), '.end_point;']);
-            if path_out_index > 1
-                eval(['X = struct.algorithm',num2str(index), '.X;']);
-                eval(['Y = struct.algorithm',num2str(index), '.Y;']);
-                if ~isempty(X) && ~isempty(Y)
-                    scatter(X, Y, 'o', 'y')
-                end
+            
+            eval(['X = struct.algorithm',num2str(index), '.X;']);
+            eval(['Y = struct.algorithm',num2str(index), '.Y;']);
+            if ~isempty(X) && ~isempty(Y)
+                scatter(X, Y, 'o', 'y')
             end
             
             

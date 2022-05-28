@@ -1,6 +1,8 @@
 # OPTIMIZATION OF CAR PARK DESIGNS
 Authors: Oscar J. Andersen and Marcus F. Petersen
+
 For any issues, plz contact us on either of the following e-mails:
+
 s194316@student.dtu.dk 
 
 s194343@student.dtu.dk
@@ -10,7 +12,7 @@ This is a folder of code developed for a bachelor thesis on DTU.
 
 To understand the code we recommend the reader to read the paper before using the code. The paper is listed in this folder named XXXXX. 
 
-The code has been written in MatLab version R2020b and Julia v1.6.2. In Julia we use the CBC MILP solver v2.10.5 and the GLPK solver v0.14.12.
+The code has been written in MatLab version R2021a and Julia v1.6.2. In Julia we use the CBC MILP solver v2.10.5 and the GLPK solver v0.14.12.
 
 All files below named *.m is MatLab files, and all files named *.jl is from Julia. 
 
@@ -21,15 +23,15 @@ Before using any MatLab code, please always start by running following script:
 
 The folder includes the following algorithms:
 
-- calling_script.m: head script that is called from main
-- main.m: the main script that assembles all function. From here it is possible to call all algorithms by chancing the parameters in this script
-- SETUP.m: adds the path to all the folders containing functions
+	- calling_script.m: head script that is called from main
+	- main.m: the main script that assembles all function. From here it is possible to call all algorithms by chancing the parameters in this script
+	- SETUP.m: adds the path to all the folders containing functions
 
 
-Outputs: An empty folder that will be filled with result after using the main script
+Outputs folder: An empty folder that will be filled with result after using the main.m script
 
 
-OperationsResearch:
+OperationsResearch folder:
 
 	- area.txt: the area corner-points which is an output from the discrete or continuous Julia script 
 	- ContinuousProblem.jl: the continuous operations research model described in the paper
@@ -39,25 +41,25 @@ OperationsResearch:
 	- points.txt: the center points of parking slots which is an output from the discrete or continuous Julia script 
 
 
-Figures: 
+Figures folder: 
 
 	- Figures_CurrentSolution: a folder containing MatLab script to create the current solutions illustrated in the paper
 	- Figures_HeuristicSection: a folder containing MatLab script to create figures from the heuristic section illustrated in the paper
 	- Figures_OurSolution: a folder containing MatLab script to create our modified solutions illustrated in the paper
 
 
-ReportResults:
+ReportResults folder:
 
 	- TimeTest.m: a script that times the heuristics. This script is used to create table 4 listed in the paper
 
-OptimalAngle: 
+OptimalAngle folder: 
 
 		- Newton.m: newtons method for finding roots numerically 
 		- SCRIPT_optimal_angle.m: a script calculating the optimal angle and density which is listed in section 2.2 in the paper
 
-Function:
+Function folder:
 
-	Functions_Heuristic:
+	Functions_Heuristic folder:
 		- check_for_crosses.m: check if the sides of the polygon crosses each other, and if they do, return a new polygon without crossing sides
 		- check_if_in_area.m: check if point is in area
 		- find_density.m: find the fraction of the area occupied by parking slots
@@ -72,7 +74,7 @@ Function:
 		- plot_parking_spaces.m: plots the car park that has been designed
 		- rotate_area.m: Rotate the area, such that the longest side lays on the x-axis, starting in origo
 	
-	Functions_PathOut:
+	Functions_PathOut folder:
 		- add_edges.m: add edges between the new nodes
 		- add_remove_XY.m: add nodes to the grid, and remove the ones conflicting with chosen_points
 		- checking_path_out.m: the main script for the path out algorithm

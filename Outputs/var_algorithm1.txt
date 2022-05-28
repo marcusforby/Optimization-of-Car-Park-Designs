@@ -1,0 +1,4 @@
+The best straight solution was with: 
+side = 1
+n = 339
+total time = 0.29337

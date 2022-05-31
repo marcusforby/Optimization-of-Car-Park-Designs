@@ -10,7 +10,7 @@ s194343@student.dtu.dk
 
 This is a folder of code developed for a bachelor thesis on DTU. 
 
-To understand the code we recommend the reader to read the paper before using the code. The paper is listed in this folder named BachelorThesis_GitHub. 
+To understand the code we recommend the reader to read the paper before using the code. The paper is listed in this folder named BachelorThesis_GitHub.pdf. 
 
 The code has been written in MatLab version R2021a and Julia v1.6.2. In Julia we use the CBC MILP solver v2.10.5 and the GLPK solver v0.14.12.
 
